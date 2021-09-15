@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans";
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: #191919;
+  color: #fafafa;
+  height: 100vh;
+  text-align: center;
+  width: 100vw;
+}
+
+body > h1 {
+  padding: 20px;
+  letter-spacing: 2px;
+}
+
+#grid {
+  display: grid;
+  gap: 4px;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.mine {
+  background-color: #a8a8a8;
+  color: #222222;
+  line-height: 40px;
+}
+
+.mine:hover,
+.mine[data-visited="true"] {
+  background-color: #e0e0e0;
+}
+
+.bomb {
+  background-color: #e72727;
+  line-height: 40px;
+}
